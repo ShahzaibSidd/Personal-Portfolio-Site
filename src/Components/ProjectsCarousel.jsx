@@ -14,6 +14,7 @@ const ProjectsCarousel = () => {
       <motion.div drag="x" dragConstraints={{left:-offScreen, right:1}} className='flex flex-nowrap gap-4' ref={refAllCards} animate={{x:-1}}>
         <ProjectCard 
         image="url('/projects/dreamit-thumbnail.png')"
+        link="https://github.com/ShahzaibSidd/Dreamit-SaaS-Image-Maker"
         projectName="Dreamit"
         desc="A full-stack SaaS web application utilizing cloudinary's AI api to alter user images, and publish them for all users to see!"
         techStack={["Nextjs", "TypeScript", 'React', 'Tailwind', 'MongoDB']}
@@ -21,6 +22,7 @@ const ProjectsCarousel = () => {
 
         <ProjectCard 
         image="url('/projects/purrminator-thumbnail.png')"
+        link="https://github.com/ShahzaibSidd/The-Purrminator-Game"
         projectName="The Purrminator"
         desc="An indie 2D top-down rogue-like made in Unity's game engine" 
         techStack={["C#", "Unity"]}
@@ -28,6 +30,7 @@ const ProjectsCarousel = () => {
 
         <ProjectCard 
         image="url('/projects/journalify-thumbnail.png')" 
+        link="https://github.com/ShahzaibSidd/Journalify-FullStack-App"
         projectName="Journal'ify"
         desc="A full-stack web application allowing users to write and store private journal entries."
         techStack={["Django", "Python", "Javascript", 'React', 'Tailwind']}
@@ -35,6 +38,7 @@ const ProjectsCarousel = () => {
 
         <ProjectCard 
         image="url('/temp-stock.jpg')" 
+        link=""
         projectName="COMING SOON"
         desc="" 
         techStack={[]}

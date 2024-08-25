@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {urbanist: ['Urbanist']},
+      colors: {'sea-blue': '#00A3FF'}
     },
   },
   plugins: [],

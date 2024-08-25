@@ -15,7 +15,9 @@ const ProjectCard = (props) => {
           <h1 className="pt-[30px] text-[50px]">
               {props.projectName}
           </h1>
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-[35px] pt-[50px]'/>
+          <a href={props.link} target="_blank" className='h-fit mt-[40px] p-[10px] rounded-xl before:bg-transparent duration-200 hover:bg-sea-blue'>
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-[35px]'/>
+          </a>
         </div>
         <p className='text-[25px] w-[500px] pb-[20px] font-light'>
           {props.desc}
