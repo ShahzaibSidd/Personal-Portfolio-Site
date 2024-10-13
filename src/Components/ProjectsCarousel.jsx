@@ -4,13 +4,19 @@ import useMeasure from 'react-use-measure';
 import { motion } from 'framer-motion';
 
 const ProjectsCarousel = () => {
+  const loadInDown = {
+    visible: {opacity:1, y:0},
+    hidden: {opacity:0, y:-30}
+  }
+
   const [refAllCards, widthAll] = useMeasure();
   const [refContainer, widthScreen] = useMeasure();
 
   let offScreen = widthAll.width-widthScreen.width;
 
   return (
-    <div className="flex flex-nowrap overflow-hidden h-[320px] w-full mt-[20px]" ref={refContainer}>
+    <motion.div className="flex flex-nowrap overflow-hidden h-[320px] w-full mt-[20px]
+    phone:max-tablet:h-[187px]" ref={refContainer} variants={loadInDown} initial="hidden" animate="visible" transition={{duration:0.3, delay:0.9}}>
       <motion.div drag="x" dragConstraints={{left:-offScreen, right:1}} className='flex flex-nowrap gap-4' ref={refAllCards} animate={{x:-1}}>
         <ProjectCard 
         image="url('/projects/dreamit-thumbnail.png')"
@@ -38,13 +44,13 @@ const ProjectsCarousel = () => {
 
         <ProjectCard 
         image="url('/temp-stock.jpg')" 
-        link=""
+        link="/"
         projectName="COMING SOON"
         desc="" 
         techStack={[]}
         />
       </motion.div>
-    </div>
+    </motion.div>
   )
 }
 

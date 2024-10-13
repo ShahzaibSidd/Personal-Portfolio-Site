@@ -9,6 +9,14 @@ export default {
       fontFamily: {urbanist: ['Urbanist']},
       colors: {'sea-blue': '#00A3FF'}
     },
+    screens: {
+      'phone': '300px',
+
+      'tablet': '640px',
+
+      'lg': '1470px',
+
+    },
   },
   plugins: [],
 }
