@@ -59,7 +59,7 @@ export default function LandingMain() {
       <div className="flex-1 text-white text-[65px] py-[30px] px-[30px]
       phone:max-tablet:text-[50px] phone:max-tablet:px-0 phone:max-tablet:pb-0 phone:max-tablet:text-center">
         <motion.a className="mx-8 phone:max-tablet:mx-[18px] hover:text-[#00A3FF] duration-150" href="" variants={loadInUp} initial="hidden" animate="visible" transition={{duration:0.3, delay:0.6}}><FontAwesomeIcon icon={faEnvelope}/></motion.a>
-        <motion.a className="mx-8 phone:max-tablet:mx-[18px] hover:text-[#00A3FF] duration-150" href="https://github.com/M-Shahzaib-Siddiqui/" target="_blank" variants={loadInUp} initial="hidden" animate="visible" transition={{duration:0.3, delay:0.7}}><FontAwesomeIcon icon={faGithub}/></motion.a>
+        <motion.a className="mx-8 phone:max-tablet:mx-[18px] hover:text-[#00A3FF] duration-150" href="https://github.com/ShahzaibSidd/" target="_blank" variants={loadInUp} initial="hidden" animate="visible" transition={{duration:0.3, delay:0.7}}><FontAwesomeIcon icon={faGithub}/></motion.a>
         <motion.a className="mx-8 phone:max-tablet:mx-[18px] hover:text-[#00A3FF] duration-150" href="https://www.linkedin.com/in/shahzaibsidd/" target="_blank" variants={loadInUp} initial="hidden" animate="visible" transition={{duration:0.3, delay:0.8}}><FontAwesomeIcon icon={faLinkedinIn} href=""/></motion.a>
       </div>
     </div>
